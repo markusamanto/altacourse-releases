@@ -10,4 +10,6 @@ Download a ZIP from `packages/` and install it through Joomla's extension instal
 
 Update-feed address: https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/updates.xml
 
-Alpha2 does not yet register this feed automatically. A subsequent bootstrap package will register it; Joomla's extension updater must then be configured to allow alpha releases on the test site. Production should accept stable releases only.
+Install alpha3 manually once to register this feed. Joomla can then offer later versions through its extension updater. Configure the test site to allow alpha releases; production should accept stable releases only.
+
+Latest bootstrap: [Download alpha3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha3.zip).
