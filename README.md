@@ -4,7 +4,7 @@ Versioned Joomla installation packages and the extension update feed.
 
 Installation packages include the new extension's PHP source. Legacy reference files and private development history are not included.
 
-These alpha packages are for an isolated test site running Joomla 6.2 and PHP 8.4. They are not production releases. Alpha6 adds protected availability editing: administrators can update any course; suppliers can update only their own upcoming courses. Stale forms and concurrent overwrites are rejected. The public course list supports UGL/UL, region and date filters. Alpha11 adds full frontend course editing with supplier assignment and 3+1/2+2 dates. Supplier profiles/terms and public information enquiries are now available. Binding signup with saved terms acceptance is now available. Notifications are not yet available.
+These alpha packages are for an isolated test site running Joomla 6.2 and PHP 8.4. They are not production releases. Alpha6 adds protected availability editing: administrators can update any course; suppliers can update only their own upcoming courses. Stale forms and concurrent overwrites are rejected. The public course list supports UGL/UL, region and date filters. Alpha11 adds full frontend course editing with supplier assignment and 3+1/2+2 dates. Supplier profiles/terms and public information enquiries are now available. Binding signup with saved terms acceptance is now available. Controlled Mailtrap notifications are now available and disabled by default.
 
 Download a ZIP from `packages/` and install it through Joomla's extension installer. Checksums are supplied beside each ZIP.
 
@@ -12,7 +12,7 @@ Update-feed address: https://raw.githubusercontent.com/markusamanto/altacourse-r
 
 Install alpha3 manually once to register this feed. Joomla can then offer later versions through its extension updater. Configure the test site to allow alpha releases; production should accept stable releases only.
 
-Latest test version: [Download alpha18](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha18.zip).
+Latest test version: [Download alpha19](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha19.zip).
 
 Alpha4 creates six empty course-list tables. It refuses legacy or unknown Altacourses tables; this is not a production-data migration. Update the installed component without uninstalling. Sample loading is off by default, requires course-administrator permission and a valid protected form, and only works when all six tables are empty. It sends no mail and creates no users.
 
@@ -43,3 +43,5 @@ Alpha16 adds a public six-field information-enquiry form with course/session sum
 Alpha17 adds binding UGL/UL signups with fifteen participant/billing fields, displayed total and explicit supplier-terms acceptance. Course/price/terms changes invalidate an open form and require renewed acceptance. Saved agreement and contact snapshots are immutable; duplicate POSTs cannot create another booking, and anonymous email matches never overwrite existing participants. Frontend administrator review includes the saved terms and acceptance time. Schema remains 2.0.5; no email, newsletter or CAPTCHA integration is added. Update without uninstalling and keep Send Mail disabled.
 
 Alpha18 changes signup Visa into a separate, administrator-only participant page with submitted details above combined signup and enquiry history. Every history entry opens its saved contact/course details; split-session dates and originally accepted terms/prices are retained. The back link returns to the signup list. No data/schema changes or email are included; controlled notifications are planned separately for alpha19. Keep Send Mail disabled and update without uninstalling.
+
+Alpha19 adds disabled-by-default Mailtrap-only notifications for enquiries and binding signups, with two immutable messages per new submission, administrator previews/status and reviewed recovery for unconfirmed attempts. It permits only authenticated sandbox.smtp.mailtrap.io SMTP on port 587/2525 with STARTTLS; no production transport, PHP mail or sendmail fallback. Schema 2.0.6 adds one outbox table; existing records are preserved and historical messages are not backfilled or sent automatically. Duplicate forms do not resend mail and SMTP failure cannot undo a saved booking. Keep Send Mail off until the documented controlled test; this remains an isolated-site test release.
