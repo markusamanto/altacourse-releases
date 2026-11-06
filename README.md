@@ -12,7 +12,7 @@ Update-feed address: https://raw.githubusercontent.com/markusamanto/altacourse-r
 
 Install alpha3 manually once to register this feed. Joomla can then offer later versions through its extension updater. Configure the test site to allow alpha releases; production should accept stable releases only.
 
-Latest test version: [Download alpha11](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha11.zip).
+Latest test version: [Download alpha12](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha12.zip).
 
 Alpha4 creates six empty course-list tables. It refuses legacy or unknown Altacourses tables; this is not a production-data migration. Update the installed component without uninstalling. Sample loading is off by default, requires course-administrator permission and a valid protected form, and only works when all six tables are empty. It sends no mail and creates no users.
 
@@ -29,3 +29,5 @@ Alpha9 adds frontend course creation: administrators select the supplier in the 
 Alpha10 simplifies the Swedish supplier label to Arrangör and defaults new-course availability to 3+. Submitted or explicitly provided availability values are retained. No schema or existing record changes.
 
 Alpha11 unifies course details and supplier assignment in one frontend editor. Administrators edit all courses; suppliers edit their own upcoming courses. Saved sessions and record history are preserved, stale writes are rejected, and updates remove the retired standalone assignment screen. There is no schema change or production-data migration.
+
+Alpha12 adds public course details, linked directly from the component listing, with all session ranges, shared location/leaders, prices/lodging, availability and escaped public notes. The back link preserves search filters and pagination. Direct URLs use the same visibility rules as the list. No additional modules, business-data writes or schema changes are introduced. Booking/enquiry forms and legacy article/4SEF mapping remain separate work.
