@@ -12,7 +12,7 @@ Update-feed address: https://raw.githubusercontent.com/markusamanto/altacourse-r
 
 Install alpha3 manually once to register this feed. Joomla can then offer later versions through its extension updater. Configure the test site to allow alpha releases; production should accept stable releases only.
 
-Latest test version: [Download alpha19](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha19.zip).
+Latest test version: [Download alpha20](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha20.zip).
 
 Alpha4 creates six empty course-list tables. It refuses legacy or unknown Altacourses tables; this is not a production-data migration. Update the installed component without uninstalling. Sample loading is off by default, requires course-administrator permission and a valid protected form, and only works when all six tables are empty. It sends no mail and creates no users.
 
@@ -45,3 +45,5 @@ Alpha17 adds binding UGL/UL signups with fifteen participant/billing fields, dis
 Alpha18 changes signup Visa into a separate, administrator-only participant page with submitted details above combined signup and enquiry history. Every history entry opens its saved contact/course details; split-session dates and originally accepted terms/prices are retained. The back link returns to the signup list. No data/schema changes or email are included; controlled notifications are planned separately for alpha19. Keep Send Mail disabled and update without uninstalling.
 
 Alpha19 adds disabled-by-default Mailtrap-only notifications for enquiries and binding signups, with two immutable messages per new submission, administrator previews/status and reviewed recovery for unconfirmed attempts. It permits only authenticated sandbox.smtp.mailtrap.io SMTP on port 587/2525 with STARTTLS; no production transport, PHP mail or sendmail fallback. Schema 2.0.6 adds one outbox table; existing records are preserved and historical messages are not backfilled or sent automatically. Duplicate forms do not resend mail and SMTP failure cannot undo a saved booking. Keep Send Mail off until the documented controlled test; this remains an isolated-site test release.
+
+Alpha20 adds private, sanitised SMTP failure diagnostics: a fixed reason category and numeric SMTP/enhanced codes where available. Raw server text, addresses and credentials are not stored in diagnostics or displayed. Sending order, database-first saving, retry policy, sandbox-only restrictions and schema 2.0.6 are unchanged. This diagnostic release helps establish the cause of a second-message failure; it does not assume sandbox throttling or add a background worker.
