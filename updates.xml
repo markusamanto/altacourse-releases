@@ -5,15 +5,15 @@
         <description>Frontend course creation with supplier ownership and multiple sessions. Test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha9</version>
+        <version>2.0.0-alpha10</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha9.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha10.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>c955ba208943fc0440da9dfff7b21e83ce8b26de022f4b008f4fa18a502ea323</sha256>
+        <sha256>7ec6cb01de1e1ad3bd4f052d0a3232ec78a973902cb30f10673da4e03b47eddd</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
