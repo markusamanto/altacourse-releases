@@ -12,7 +12,7 @@ Update-feed address: https://raw.githubusercontent.com/markusamanto/altacourse-r
 
 Install alpha3 manually once to register this feed. Joomla can then offer later versions through its extension updater. Configure the test site to allow alpha releases; production should accept stable releases only.
 
-Latest test version: [Download alpha8](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha8.zip).
+Latest test version: [Download alpha9](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha9.zip).
 
 Alpha4 creates six empty course-list tables. It refuses legacy or unknown Altacourses tables; this is not a production-data migration. Update the installed component without uninstalling. Sample loading is off by default, requires course-administrator permission and a valid protected form, and only works when all six tables are empty. It sends no mail and creates no users.
 
@@ -23,3 +23,5 @@ Alpha6 adds an availability revision counter through schema migration 2.0.1. Exi
 Alpha7 adds administrator-only supplier assignment to active Joomla accounts with supplier permission. Assignment updates invalidate older availability forms, and removing assignment retains the course. No supplier profiles, mail, external integrations or additional schema migrations are included.
 
 Alpha8 adds additional-session storage and displays all date ranges in public and protected course lists. Date-to filtering uses the final session end; date-from uses the original first start. Location and leaders remain shared. Schema 2.0.2 adds one linked table without changing existing course dates. An opt-in protected fixture action extends the two UL synthetic samples. Course-creation/session-editing forms are not included yet.
+
+Alpha9 adds frontend course creation: administrators select the supplier in the form; suppliers create courses assigned to themselves. One or two sessions, required core fields, retained values on validation errors and immediate publication are supported. Schema 2.0.3 adds a unique nullable creation-submission key to prevent duplicate saves. Existing records remain unchanged. Full course editing and bookings are still forthcoming.
