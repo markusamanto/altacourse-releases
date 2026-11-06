@@ -4,7 +4,7 @@ Versioned Joomla installation packages and the extension update feed.
 
 Installation packages include the new extension's PHP source. Legacy reference files and private development history are not included.
 
-These alpha packages are for an isolated test site running Joomla 6.2 and PHP 8.4. They are not production releases. Alpha6 adds protected availability editing: administrators can update any course; suppliers can update only their own upcoming courses. Stale forms and concurrent overwrites are rejected. The public course list supports UGL/UL, region and date filters. Full course editing, booking and supplier profile management are not yet available.
+These alpha packages are for an isolated test site running Joomla 6.2 and PHP 8.4. They are not production releases. Alpha6 adds protected availability editing: administrators can update any course; suppliers can update only their own upcoming courses. Stale forms and concurrent overwrites are rejected. The public course list supports UGL/UL, region and date filters. Alpha11 adds full frontend course editing with supplier assignment and 3+1/2+2 dates. Booking and supplier profile management are not yet available.
 
 Download a ZIP from `packages/` and install it through Joomla's extension installer. Checksums are supplied beside each ZIP.
 
@@ -12,7 +12,7 @@ Update-feed address: https://raw.githubusercontent.com/markusamanto/altacourse-r
 
 Install alpha3 manually once to register this feed. Joomla can then offer later versions through its extension updater. Configure the test site to allow alpha releases; production should accept stable releases only.
 
-Latest test version: [Download alpha10](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha10.zip).
+Latest test version: [Download alpha11](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha11.zip).
 
 Alpha4 creates six empty course-list tables. It refuses legacy or unknown Altacourses tables; this is not a production-data migration. Update the installed component without uninstalling. Sample loading is off by default, requires course-administrator permission and a valid protected form, and only works when all six tables are empty. It sends no mail and creates no users.
 
@@ -27,3 +27,5 @@ Alpha8 adds additional-session storage and displays all date ranges in public an
 Alpha9 adds frontend course creation: administrators select the supplier in the form; suppliers create courses assigned to themselves. One or two sessions, required core fields, retained values on validation errors and immediate publication are supported. Schema 2.0.3 adds a unique nullable creation-submission key to prevent duplicate saves. Existing records remain unchanged. Full course editing and bookings are still forthcoming.
 
 Alpha10 simplifies the Swedish supplier label to Arrangör and defaults new-course availability to 3+. Submitted or explicitly provided availability values are retained. No schema or existing record changes.
+
+Alpha11 unifies course details and supplier assignment in one frontend editor. Administrators edit all courses; suppliers edit their own upcoming courses. Saved sessions and record history are preserved, stale writes are rejected, and updates remove the retired standalone assignment screen. There is no schema change or production-data migration.
