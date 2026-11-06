@@ -4,7 +4,7 @@ Versioned Joomla installation packages and the extension update feed.
 
 Installation packages include the new extension's PHP source. Legacy reference files and private development history are not included.
 
-These alpha packages are for an isolated test site running Joomla 6.2 and PHP 8.4. They are not production releases. Alpha6 adds protected availability editing: administrators can update any course; suppliers can update only their own upcoming courses. Stale forms and concurrent overwrites are rejected. The public course list supports UGL/UL, region and date filters. Alpha11 adds full frontend course editing with supplier assignment and 3+1/2+2 dates. Supplier profiles/terms and public information enquiries are now available. Binding booking and notifications are not yet available.
+These alpha packages are for an isolated test site running Joomla 6.2 and PHP 8.4. They are not production releases. Alpha6 adds protected availability editing: administrators can update any course; suppliers can update only their own upcoming courses. Stale forms and concurrent overwrites are rejected. The public course list supports UGL/UL, region and date filters. Alpha11 adds full frontend course editing with supplier assignment and 3+1/2+2 dates. Supplier profiles/terms and public information enquiries are now available. Binding signup with saved terms acceptance is now available. Notifications are not yet available.
 
 Download a ZIP from `packages/` and install it through Joomla's extension installer. Checksums are supplied beside each ZIP.
 
@@ -12,7 +12,7 @@ Update-feed address: https://raw.githubusercontent.com/markusamanto/altacourse-r
 
 Install alpha3 manually once to register this feed. Joomla can then offer later versions through its extension updater. Configure the test site to allow alpha releases; production should accept stable releases only.
 
-Latest test version: [Download alpha16](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha16.zip).
+Latest test version: [Download alpha17](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha17.zip).
 
 Alpha4 creates six empty course-list tables. It refuses legacy or unknown Altacourses tables; this is not a production-data migration. Update the installed component without uninstalling. Sample loading is off by default, requires course-administrator permission and a valid protected form, and only works when all six tables are empty. It sends no mail and creates no users.
 
@@ -39,3 +39,5 @@ Alpha14 changes only public pricing: the listing and details show one total foll
 Alpha15 adds protected frontend supplier profiles and booking/cancellation terms. Administrators manage supplier profiles; suppliers manage their own. Joomla account email remains the notification address and account editing remains native Joomla. Schema 2.0.4 adds the legacy-shaped supplier table with safe keys, Unicode/transactional storage and revision checks. Existing course/session data is retained; legacy table collisions and schema downgrades are refused. No booking submission or notifications are included.
 
 Alpha16 adds a public six-field information-enquiry form with course/session summary, transactional persistence and private administrator review. Schema 2.0.5 adds clients, requests and immutable submission snapshots while preserving existing records. Repeated submissions are deduplicated and existing participant profiles are never overwritten by anonymous email matches. No email, newsletter integration or CAPTCHA is included yet. Keep Send Mail disabled; this increment saves enquiries only.
+
+Alpha17 adds binding UGL/UL signups with fifteen participant/billing fields, displayed total and explicit supplier-terms acceptance. Course/price/terms changes invalidate an open form and require renewed acceptance. Saved agreement and contact snapshots are immutable; duplicate POSTs cannot create another booking, and anonymous email matches never overwrite existing participants. Frontend administrator review includes the saved terms and acceptance time. Schema remains 2.0.5; no email, newsletter or CAPTCHA integration is added. Update without uninstalling and keep Send Mail disabled.

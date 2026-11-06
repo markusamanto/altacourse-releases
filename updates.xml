@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Public information enquiries with protected review. No notifications. Test release.</description>
+        <description>Binding course signups with saved terms acceptance. No notifications. Test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha16</version>
+        <version>2.0.0-alpha17</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha16.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha17.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>499a80df5a1c9e964b4e533d47b20671d0222aca5221b197fde3655921b5a3bc</sha256>
+        <sha256>7c64e79ea25035da99e9951ef43b364f98e798ecc4c7245ea076df927d88f004</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
