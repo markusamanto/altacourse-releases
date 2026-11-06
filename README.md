@@ -12,7 +12,7 @@ Update-feed address: https://raw.githubusercontent.com/markusamanto/altacourse-r
 
 Install alpha3 manually once to register this feed. Joomla can then offer later versions through its extension updater. Configure the test site to allow alpha releases; production should accept stable releases only.
 
-Latest test version: [Download alpha14](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha14.zip).
+Latest test version: [Download alpha15](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha15.zip).
 
 Alpha4 creates six empty course-list tables. It refuses legacy or unknown Altacourses tables; this is not a production-data migration. Update the installed component without uninstalling. Sample loading is off by default, requires course-administrator permission and a valid protected form, and only works when all six tables are empty. It sends no mail and creates no users.
 
@@ -35,3 +35,5 @@ Alpha12 adds public course details, linked directly from the component listing, 
 Alpha13 corrects the lodging display for older records: when a price exists and inclusion is unset, the price is displayed without an additional “not specified” label. Existing included/separate labels and all stored values are preserved. No schema or integration changes.
 
 Alpha14 changes only public pricing: the listing and details show one total followed by kr. Two entered prices are added; a single course fee with lodging included is the total. Protected editing retains both fields and the checkbox. No stored data or schema is changed. Supplier profiles and booking terms are planned for alpha15.
+
+Alpha15 adds protected frontend supplier profiles and booking/cancellation terms. Administrators manage supplier profiles; suppliers manage their own. Joomla account email remains the notification address and account editing remains native Joomla. Schema 2.0.4 adds the legacy-shaped supplier table with safe keys, Unicode/transactional storage and revision checks. Existing course/session data is retained; legacy table collisions and schema downgrades are refused. No booking submission or notifications are included.
