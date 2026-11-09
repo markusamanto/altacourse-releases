@@ -2,18 +2,37 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Administrator commission overview, recorded amounts and protected manual CSV download. Test release.</description>
+        <description>Controlled monthly administrator CSV report; test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha24</version>
+        <version>2.0.0-alpha25</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha24.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha25.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>7d01ee9c3a35c8d41d2ebd076c9c8f0fdc0439dd952c794a9b293279ad8a883c</sha256>
+        <sha256>1b13d37e566033cfe9fa0071047737d640d7e88139a16b2110fcea394883f09c</sha256>
+        <tags>
+            <tag>alpha</tag>
+        </tags>
+    </update>
+    <update>
+        <name>Altacourses monthly task</name>
+        <description>Controlled monthly administrator CSV report; test release.</description>
+        <element>altacoursesmonthly</element>
+        <type>plugin</type>
+        <version>2.0.0-alpha25</version>
+        <client>site</client>
+        <folder>task</folder>
+        <downloads>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.0-alpha25.zip</downloadurl>
+        </downloads>
+        <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
+        <targetplatform name="joomla" version="6\.2(?:\.|$)" />
+        <php_minimum>8.4.0</php_minimum>
+        <sha256>8053b8fe9494d8fccc47569505c1c65ab3d6e79382d00ae89e0147372f146ba7</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
