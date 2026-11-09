@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Frontend administrator course-leader listing, creation and editing with legacy IDs preserved; test release.</description>
+        <description>Course-leader article selection scoped to a configured Joomla category; test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha29</version>
+        <version>2.0.0-alpha30</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha29.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha30.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>9294963e3941bc64d0af68ba7e995efec808e1d9bd00a578477e428a585154bd</sha256>
+        <sha256>11d865a41a41061a0f0a828f8aeef892461a3f4b504c836f70f5dc614ba1db34</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
