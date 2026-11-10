@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Administrator course publication controls and full-list return after saving; test release.</description>
+        <description>Frontend accounts and administrator client-to-account assignment; test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha37</version>
+        <version>2.0.0-alpha38</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha37.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha38.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>90f79d905a7b432d65f4ee6f99b7a0e7cf401779ab2897ac6bfc76b34098bcef</sha256>
+        <sha256>575bdc35e5294465f92ce7bce04e591ff6514a0941758f401b49174bded9b126</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
