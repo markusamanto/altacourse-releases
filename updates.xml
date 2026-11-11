@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Legacy signup/enquiry visibility without submission snapshots; test release.</description>
+        <description>Individual-request rebooking with legacy two-request history; test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha44</version>
+        <version>2.0.0-alpha45</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha44.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha45.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>9f6dbd2c791f676ace73c500f320d653eb42fb8f7d6b6fecd032457358de8531</sha256>
+        <sha256>c652443640cad1a459775e44c18715c6932ac1c5c321f103df5a24a4cfa370f7</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
