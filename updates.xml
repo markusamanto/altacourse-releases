@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Administrator unconfirmed-request overview ordered by current supplier, course start date and client first name; test release.</description>
+        <description>Scheduled type 3 supplier reminders, reviewed delivery archive and retained lastminute table support; test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha50</version>
+        <version>2.0.0-alpha51</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha50.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha51.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>6f63e8520c16edd4a61dfdb4ed7a25d2f4d75b2f9640883e3e8894e514912959</sha256>
+        <sha256>f3bf251bda85bc42d2c7b8d788a9f380dab77b4e44c85ddd6b6e804d97b04e54</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
