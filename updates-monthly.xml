@@ -2,19 +2,19 @@
 <updates>
     <update>
         <name>Altacourses monthly task</name>
-        <description>Monthly reports, supplier reminders, evaluation invitations and daily Mailchimp enrolment tasks; test release.</description>
+        <description>Report, reminder, evaluation, Mailchimp and Zenler newsletter tasks; test release.</description>
         <element>altacoursesmonthly</element>
         <type>plugin</type>
-        <version>2.0.1-alpha62</version>
+        <version>2.0.1-alpha63</version>
         <client>site</client>
         <folder>task</folder>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-alpha62.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-alpha63.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>155ee8c96e3e4f2b73cbe6136a13e69aed122cc8a3664a6a303b16b7f08d5afe</sha256>
+        <sha256>1bde28b0499a6d8727b840189f9a4d2ab392794d7ce23c082e309149e677a412</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
