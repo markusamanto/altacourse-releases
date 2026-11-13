@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Expanded public course information, contextual article links and enquiry/signup actions; test release.</description>
+        <description>Shared related-course listing and public course services; test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha59</version>
+        <version>2.0.0-alpha60</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha59.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha60.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>2bb821764b17573e7745cc119f12070cb501d5449d1bbf62b1388194ad2df607</sha256>
+        <sha256>c14cb287d354beec6789518586f55a104ea440fa360822771d2d3cf2bfd892de</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>

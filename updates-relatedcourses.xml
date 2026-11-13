@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<updates>
+    <update>
+        <name>Altacourses related courses</name>
+        <description>Upcoming courses for linked leader articles; test release.</description>
+        <element>mod_altarelatedcourses</element>
+        <type>module</type>
+        <version>2.0.0-alpha60</version>
+        <client>site</client>
+        <downloads>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-alpha60.zip</downloadurl>
+        </downloads>
+        <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
+        <targetplatform name="joomla" version="6\.2(?:\.|$)" />
+        <php_minimum>8.4.0</php_minimum>
+        <sha256>be631dbfc8ea66468aa59207e9fdba368cbc4d46630893fbeffcb0b093301d9e</sha256>
+        <tags>
+            <tag>alpha</tag>
+        </tags>
+    </update>
+</updates>
