@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Public evaluations with legacy/secure invitation codes, optional private corrections and selected Custom module thanks; test release.</description>
+        <description>Administrator evaluation review with legacy publication status, expandable course details and private feedback/corrections; test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha55</version>
+        <version>2.0.0-alpha56</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha55.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha56.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>26ddf851a2607a995fcd3997414ba4d4f629747b568b27f77270e39f6f8074ec</sha256>
+        <sha256>fd8b69ca14a61d0143cc79c52df9378051f30d13d1e9fad491862395e17dd528</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
