@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Future-only supplier availability and editable course letter support; test release.</description>
+        <description>Course letter and supplier availability with Joomla database-check compatibility; test release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha67</version>
+        <version>2.0.0-alpha67.1</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha67.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha67.1.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>80f87f9ee1993588580c29eb980a33a222a0d76dc80feb448d678dbbe22ee5ff</sha256>
+        <sha256>ddd03e503ce1b5f83fe02cfc80f629c99a08229d1acaacfc8a32a559f87e303c</sha256>
         <tags>
             <tag>alpha</tag>
         </tags>
