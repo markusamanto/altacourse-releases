@@ -2,20 +2,20 @@
 <updates>
     <update>
         <name>Altacourses personal letter</name>
-        <description>Editable letter with live public course count and current date; test release.</description>
+        <description>Editable letter with live public course count and current date; Beta1 release.</description>
         <element>mod_altacoursesletter</element>
         <type>module</type>
-        <version>2.0.0-alpha67</version>
+        <version>2.0.0-beta1</version>
         <client>site</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-alpha67.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta1.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>55569ed3481c9e8fbdd9dd74f5f96f266fc93c713f5811028cb4bd068ecd8036</sha256>
+        <sha256>0c8f3764e13120b0c7a51e3b8c5ee263c5e374a12867ed372b648a6c1dd4813d</sha256>
         <tags>
-            <tag>alpha</tag>
+            <tag>beta</tag>
         </tags>
     </update>
 </updates>

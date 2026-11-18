@@ -2,20 +2,20 @@
 <updates>
     <update>
         <name>Altacourses</name>
-        <description>Explicit encrypted production email with per-message queue review and retained sandbox mode; test release.</description>
+        <description>UL/UGL course administration, public listings and controlled email delivery; Beta1 fresh-install release.</description>
         <element>com_altacourses</element>
         <type>component</type>
-        <version>2.0.0-alpha72</version>
+        <version>2.0.0-beta1</version>
         <client>administrator</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-alpha72.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta1.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>ec67e1a8f56c1fa7c8b661532435b1703eda0a3eefae607ad816c2896ddb884e</sha256>
+        <sha256>7c89673c8e548cdf2a1466cd8080a696bad52a89836fd9c82a1aa8d4250a4cc7</sha256>
         <tags>
-            <tag>alpha</tag>
+            <tag>beta</tag>
         </tags>
     </update>
 </updates>
