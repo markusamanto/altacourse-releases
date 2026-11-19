@@ -1,25 +1,46 @@
-# Altacourses Beta1 — fresh installation
+# Altacourses Beta2
+
+Update the component first, then the three changed modules. Do not uninstall. Back up your files/database first. The task plugin, editable letter and evaluations module remain at Beta1.
+
+| Package | Download |
+|---|---|
+| Component | [com_altacourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.zip) |
+| Course details | [mod_altacoursedetails 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
+| Related courses | [mod_altarelatedcourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta2.zip) |
+| Compact courses | [mod_altacourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta2.zip) |
+
+In component Options → **Prisvisning**, choose **Variabelt kurspris (V)** for mixed Internat/Externat courses. **Totalpris (T)** remains the default. All existing/new courses default to Internat; edit non-residential courses to Externat using the new dropdown below the room/board checkbox. Price arithmetic remains unchanged. Schema2.0.28 adds the residential field automatically; no manual SQL import is required.
+
+Variable-mode listings show matching superscript1/2 inclusion notes. Individual information/signup/email details show the applicable description. Saved historical submissions/messages stay unchanged. Super Users are excluded from supplier lists/choices. Both welcome pages now rely on your Joomla menus; administrator statistics and controls remain.
+
+Compact module: **Visa knappen till fler kurser** defaults Yes. Course-details module: **Visa kurstyp** defaults No, with improved Övrigt/VAT spacing. Related-course tables are striped in both modes. Update the component before these three modules.
+
+All four packages have native Joomla update feeds. Allow Beta minimum extension stability for Live Update; manual uploads do not require that global change. Other integrations/delivery settings are retained; updating never enables sending automatically. No hosted installation is performed by publishing these downloads.
+
+---
+
+# Fresh-install setup (original Beta1 guide; use current packages above)
 
 The user has chosen to back up advenire.se and install directly, without staging. Hosting is HostUp, with user-reported Joomla 6.2 / PHP 8.4 and the same specifications as the existing test site. Local verification uses Joomla 6.2 / PHP 8.4 / MySQL 8.4; no connection to advenire.se has been made. This is a fresh UL-only installation, not a legacy migration.
 
-## Downloads and installation order
+## Fresh-install downloads and installation order
 
 Download and install through **System → Install → Extensions → Upload Package File**. Install the component first; then the task plugin and whichever modules you will use. Do not uninstall to update an existing rebuild installation.
 
 | Package | Download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta1.zip) |
+| Component | [com_altacourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.zip) |
 | Scheduled tasks | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
-| Course details beside linked articles | [mod_altacoursedetails](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta1.zip) |
-| Upcoming courses for a leader/place article | [mod_altarelatedcourses](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta1.zip) |
+| Course details beside linked articles | [mod_altacoursedetails](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
+| Upcoming courses for a leader/place article | [mod_altarelatedcourses](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta2.zip) |
 | Editable letter with dynamic count | [mod_altacoursesletter](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta1.zip) |
 | Published evaluations | [mod_altaevaluations](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta1.zip) |
-| Compact upcoming-course list | [mod_altacourses](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta1.zip) |
+| Compact upcoming-course list | [mod_altacourses](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta2.zip) |
 
-The five modules are all 2.0.0-beta1. The plugin's 2.0.1 version preserves its existing version sequence. Each addon requires the Beta1 component. These are separate installation ZIPs, not a single Joomla package bundle. Existing versioned Alpha downloads remain available unchanged.
+The details, related and compact modules are 2.0.0-beta2; the letter and evaluations modules remain 2.0.0-beta1. The plugin's 2.0.1 version preserves its existing version sequence. The Beta2 addons require the Beta2 component; remaining addons support Beta1 or newer. These are separate installation ZIPs, not a single Joomla package bundle. Existing versioned Alpha downloads remain available unchanged.
 
 1. Take the full site/files/database backup you planned and retain the restore instructions.
-2. Install the component. Check **System → Maintenance → Database**; the schema remains 2.0.27. No manual SQL import or test database copy is required.
+2. Install the component. Check **System → Maintenance → Database**; the schema is 2.0.28. No manual SQL import or test database copy is required.
 3. Install the selected addons. Newly created module instances are unpublished. Set their titles, positions, menu assignments and individual options before publishing them. Use two instances of Related Courses if both leader and place modes are needed.
 4. Keep sample-data loading disabled. Email modes and Mailchimp/Zenler delivery default to Disabled; installing packages does not create scheduled tasks or enable delivery.
 

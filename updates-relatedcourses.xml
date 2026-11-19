@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses related courses</name>
-        <description>Upcoming courses for linked leader and venue articles; Beta1 release.</description>
+        <description>Striped upcoming-course listings for leaders and venues with mixed-format pricing; Beta2 release.</description>
         <element>mod_altarelatedcourses</element>
         <type>module</type>
-        <version>2.0.0-beta1</version>
+        <version>2.0.0-beta2</version>
         <client>site</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta1.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta2.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>0ff4496015f4d9df6bf480ceee5bb4744092ba9a0fabd85179c19e513d2e0f7c</sha256>
+        <sha256>c6579e98dfecdf7ddb526daa06d95937f19826f42893b2ad418fea2fa4866f08</sha256>
         <tags>
             <tag>beta</tag>
         </tags>
