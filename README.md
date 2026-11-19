@@ -79,7 +79,7 @@ Enable the task plugin and create only the Joomla Scheduled Tasks you want, afte
 
 ## Updates and launch
 
-Manual upload installs Beta1 without changing Joomla's minimum extension stability. Future Beta Live Updates require Joomla's minimum extension stability to allow Beta; that global setting also affects other extensions. Stable-only sites will not discover prereleases. Each installed addon has its own update feed.
+Manual upload installs the selected Beta package without changing Joomla's minimum extension stability. Future Beta Live Updates require Joomla's minimum extension stability to allow Beta; that global setting also affects other extensions. Stable-only sites will not discover prereleases. Each installed addon has its own update feed.
 
 Decide when real bookings begin and distinguish retained business records from disposable test records. A full backup restore is straightforward before real activity; after real requests arrive, preserve/reconcile those new records before restoring an older backup. This guide does not mark advenire.se as installed, tested on-host or publicly launched. Legacy installation protection remains in place; ugl.biz and uglkurser.se migration rehearsal follows separately.
 
