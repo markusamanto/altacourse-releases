@@ -1,10 +1,22 @@
+# Altacourses Beta2.1 — component-only update
+
+[Download com_altacourses 2.0.0-beta2.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.1.zip)
+
+Back up first, then update only the component through Joomla Live Update (Beta stability) or upload the ZIP. No uninstall, database reset or module update is needed. Schema remains2.0.28; settings/business records/delivery modes are preserved.
+
+Create a menu item via **Menus → your menu → New → Altacourses → Public course listing (Publik kurslista)**. Choose **All** or one or more **Course types to show (Visa kurstyper)**. All includes future course types automatically. Set the alias and native **Page Display → Browser Page Title**, page heading/visibility and metadata as desired.
+
+The menu defines the available types for that page; visitor filters can narrow but not broaden it. Search and pagination retain the menu context. Existing direct/module listing links keep their current behaviour. All addons remain at the versions listed below. The planned Beta3 caption/paragraph-layout and accessible price-tooltip enhancements are reserved for Beta3.
+
+---
+
 # Altacourses Beta2
 
 Update the component first, then the three changed modules. Do not uninstall. Back up your files/database first. The task plugin, editable letter and evaluations module remain at Beta1.
 
 | Package | Download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.zip) |
+| Component | [com_altacourses 2.0.0-beta2.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.1.zip) |
 | Course details | [mod_altacoursedetails 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
 | Related courses | [mod_altarelatedcourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta2.zip) |
 | Compact courses | [mod_altacourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta2.zip) |
@@ -29,7 +41,7 @@ Download and install through **System → Install → Extensions → Upload Pack
 
 | Package | Download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.zip) |
+| Component | [com_altacourses 2.0.0-beta2.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.1.zip) |
 | Scheduled tasks | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
 | Course details beside linked articles | [mod_altacoursedetails](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
 | Upcoming courses for a leader/place article | [mod_altarelatedcourses](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta2.zip) |
