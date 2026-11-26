@@ -1,4 +1,4 @@
-# Altacourses Beta3
+# Altacourses Beta3 + Related Courses Beta3.1
 
 Update the component first, then Compact Courses and Related Courses. Back up files/database first; do not uninstall to update. Use Joomla Live Update with minimum extension stability Beta, or upload these ZIPs. Updating retains business records, settings, delivery modes, module instances/assignments and schedules; schema stays2.0.28.
 
@@ -6,11 +6,15 @@ Update the component first, then Compact Courses and Related Courses. Back up fi
 |---|---|
 | Component | [com_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta3.zip) |
 | Compact courses | [mod_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta3.zip) |
-| Related courses | [mod_altarelatedcourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta3.zip) |
+| Related courses | [mod_altarelatedcourses 2.0.0-beta3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta3.1.zip) |
 | Course details (unchanged) | [mod_altacoursedetails 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
 | Scheduled tasks (unchanged) | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
 | Editable letter (unchanged) | [mod_altacoursesletter 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta1.zip) |
 | Public evaluations (unchanged) | [mod_altaevaluations 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta1.zip) |
+
+## Beta3.1 correction
+
+If Beta3 is installed, update **only Related Courses**. Version2.0.0-beta3.1 splits its text in both leader/place modes: VAT plus the relevant linked-name instruction first, then T inclusion or separate V Internat/Externat paragraphs. The component remains Beta3; no data/settings change. CSS hooks: `.altarelatedcourses-price-notice`, `-total`, `-internat`, `-externat`.
 
 ## Beta3 changes and setup
 
