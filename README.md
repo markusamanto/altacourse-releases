@@ -1,16 +1,16 @@
 # Altacourses Beta5
 
-Beta5 updates the component and four modules. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta; component first. Back up files/database and do not uninstall. The first legacy ugl.biz installation needs the manual migration procedure below. Compact Courses and Scheduled Tasks keep their previous versions. Business schema stays2.0.28.
+Beta5.1 is the final Beta5 package set and updates the component and four modules. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta; component first. Back up files/database and do not uninstall. The first legacy ugl.biz installation needs the manual migration procedure below. Compact Courses and Scheduled Tasks keep their previous versions. Business schema stays2.0.28.
 
 | Package | Current download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.zip) |
+| Component | [com_altacourses 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.1.zip) |
 | Compact courses | [mod_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta3.zip) |
-| Related courses | [mod_altarelatedcourses 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.zip) |
-| Course details | [mod_altacoursedetails 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta5.zip) |
+| Related courses | [mod_altarelatedcourses 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.1.zip) |
+| Course details | [mod_altacoursedetails 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta5.1.zip) |
 | Scheduled tasks (unchanged) | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
-| Editable letter | [mod_altacoursesletter 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta5.zip) |
-| Public evaluations | [mod_altaevaluations 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta5.zip) |
+| Editable letter | [mod_altacoursesletter 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta5.1.zip) |
+| Public evaluations | [mod_altaevaluations 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta5.1.zip) |
 
 ## Beta5 changes and legacy installation
 
