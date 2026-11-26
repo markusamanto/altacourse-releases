@@ -1,98 +1,46 @@
-# Altacourses Beta2.1 — component-only update
+# Altacourses Beta3
 
-[Download com_altacourses 2.0.0-beta2.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.1.zip)
+Update the component first, then Compact Courses and Related Courses. Back up files/database first; do not uninstall to update. Use Joomla Live Update with minimum extension stability Beta, or upload these ZIPs. Updating retains business records, settings, delivery modes, module instances/assignments and schedules; schema stays2.0.28.
 
-Back up first, then update only the component through Joomla Live Update (Beta stability) or upload the ZIP. No uninstall, database reset or module update is needed. Schema remains2.0.28; settings/business records/delivery modes are preserved.
-
-Create a menu item via **Menus → your menu → New → Altacourses → Public course listing (Publik kurslista)**. Choose **All** or one or more **Course types to show (Visa kurstyper)**. All includes future course types automatically. Set the alias and native **Page Display → Browser Page Title**, page heading/visibility and metadata as desired.
-
-The menu defines the available types for that page; visitor filters can narrow but not broaden it. Search and pagination retain the menu context. Existing direct/module listing links keep their current behaviour. All addons remain at the versions listed below. The planned Beta3 caption/paragraph-layout and accessible price-tooltip enhancements are reserved for Beta3.
-
----
-
-# Altacourses Beta2
-
-Update the component first, then the three changed modules. Do not uninstall. Back up your files/database first. The task plugin, editable letter and evaluations module remain at Beta1.
-
-| Package | Download |
+| Package | Current download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta2.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.1.zip) |
-| Course details | [mod_altacoursedetails 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
-| Related courses | [mod_altarelatedcourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta2.zip) |
-| Compact courses | [mod_altacourses 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta2.zip) |
+| Component | [com_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta3.zip) |
+| Compact courses | [mod_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta3.zip) |
+| Related courses | [mod_altarelatedcourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta3.zip) |
+| Course details (unchanged) | [mod_altacoursedetails 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
+| Scheduled tasks (unchanged) | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
+| Editable letter (unchanged) | [mod_altacoursesletter 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta1.zip) |
+| Public evaluations (unchanged) | [mod_altaevaluations 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta1.zip) |
 
-In component Options → **Prisvisning**, choose **Variabelt kurspris (V)** for mixed Internat/Externat courses. **Totalpris (T)** remains the default. All existing/new courses default to Internat; edit non-residential courses to Externat using the new dropdown below the room/board checkbox. Price arithmetic remains unchanged. Schema2.0.28 adds the residential field automatically; no manual SQL import is required.
+## Beta3 changes and setup
 
-Variable-mode listings show matching superscript1/2 inclusion notes. Individual information/signup/email details show the applicable description. Saved historical submissions/messages stay unchanged. Super Users are excluded from supplier lists/choices. Both welcome pages now rely on your Joomla menus; administrator statistics and controls remain.
+- Public table caption is visually hidden. VAT/instructions come first, followed by separate inclusion paragraphs with stable CSS classes. Compact pricing paragraphs follow the listing button, VAT first.
+- Variable-price numbered markers now explain themselves on hover/focus/tap. Tooltips support Escape/outside dismissal, one open at a time, viewport positioning, dynamic listings and multiple instances; visible explanations remain without JavaScript. Price arithmetic/residential numbering stay unchanged.
+- Native menu types now cover administrator/supplier working pages with translated labels and record selectors where needed. Change existing **System Links → URL** items to the matching **Altacourses** type while preserving their alias/ID and access level. Login/Custom help modules can then use **Only on the pages selected**. No menu conversion or module reassignment happens automatically; existing page permissions still apply.
+- Supplier welcome component output is only **Välkommen / Welcome** in H1. Use your Custom module for the remaining text. Administrator welcome/statistics remain unchanged.
 
-Compact module: **Visa knappen till fler kurser** defaults Yes. Course-details module: **Visa kurstyp** defaults No, with improved Övrigt/VAT spacing. Related-course tables are striped in both modes. Update the component before these three modules.
+Native reference forms offer Add new; contextual pages require the appropriate record. Supplier profile defaults to the logged-in supplier; administrators select a supplier. Key-account billing uses R# current requests or L# legacy records with the matching data-source selector. Public token/receipt/submission screens and obsolete redirect aliases are not admin menu destinations.
 
-All four packages have native Joomla update feeds. Allow Beta minimum extension stability for Live Update; manual uploads do not require that global change. Other integrations/delivery settings are retained; updating never enables sending automatically. No hosted installation is performed by publishing these downloads.
+Component pricing CSS hooks: `.altacourses-price-notice`, `-total`, `-internat`, `-externat`. Compact equivalents: `.altacourses-compact-price-notice`, `-total`, `-internat`, `-externat`. Tooltip hooks: `.altacourses-price-marker`, `.altacourses-price-trigger`, `.altacourses-price-tooltip`, with `--altacourses-tooltip-background`, `--altacourses-tooltip-color`, `--altacourses-tooltip-border` variables for user.css.
 
----
+Local Chromium checks cover hover/keyboard/Escape, movement into the tooltip, touch emulation/outside taps, viewport bounds, multiple instances, dynamic IDs/removal, duplicate-handler prevention, no form submission/navigation and JavaScript-disabled explanations. Real iPhone Safari and branded desktop Chrome/Edge remain manual checks, particularly orientation/zoom and interaction with the site's own CSS. Chromium touch emulation is not Safari verification.
 
-# Fresh-install setup (original Beta1 guide; use current packages above)
+## Public course-listing menu
 
-The user has chosen to back up advenire.se and install directly, without staging. Hosting is HostUp, with user-reported Joomla 6.2 / PHP 8.4 and the same specifications as the existing test site. Local verification uses Joomla 6.2 / PHP 8.4 / MySQL 8.4; no connection to advenire.se has been made. This is a fresh UL-only installation, not a legacy migration.
+**Menus → your menu → New → Altacourses → Public course listing / Publik kurslista** provides All or selected course types. All includes future types. Visitors can narrow but cannot broaden that menu's selection; searches/pagination retain its Itemid. Standard browser page title, heading/visibility and metadata are honoured. Direct/module listing links retain their existing behaviour.
 
-## Fresh-install downloads and installation order
+## Fresh-install essentials
 
-Download and install through **System → Install → Extensions → Upload Package File**. Install the component first; then the task plugin and whichever modules you will use. Do not uninstall to update an existing rebuild installation.
+Compatible with the verified Joomla6.2 / PHP8.4 / MySQL8.4 baseline. Install the component first, then only the addons the site needs. Set module positions/menu assignments and publish them deliberately. Keep synthetic sample loading disabled on real sites. No legacy database import is part of this installer; legacy migration retains its separate guarded procedure.
 
-| Package | Download |
-|---|---|
-| Component | [com_altacourses 2.0.0-beta2.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta2.1.zip) |
-| Scheduled tasks | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
-| Course details beside linked articles | [mod_altacoursedetails](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
-| Upcoming courses for a leader/place article | [mod_altarelatedcourses](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta2.zip) |
-| Editable letter with dynamic count | [mod_altacoursesletter](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta1.zip) |
-| Published evaluations | [mod_altaevaluations](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta1.zip) |
-| Compact upcoming-course list | [mod_altacourses](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta2.zip) |
+Frontend welcome: `index.php?option=com_altacourses&view=dashboard`. Public courses: `index.php?option=com_altacourses&view=courses`. Super Users can administer the frontend; ordinary suppliers need the component's **Frontend supplier access** permission and a linked supplier profile with booking terms.
 
-The details, related and compact modules are 2.0.0-beta2; the letter and evaluations modules remain 2.0.0-beta1. The plugin's 2.0.1 version preserves its existing version sequence. The Beta2 addons require the Beta2 component; remaining addons support Beta1 or newer. These are separate installation ZIPs, not a single Joomla package bundle. Existing versioned Alpha downloads remain available unchanged.
+Before creating courses, initialise/publish availability status codes in Platsindikeringar: **1=3+**, **2=Fullbokat**, **3=Få**, **4=Inställd**. These are status codes, not record IDs. Create course types, regions, places, leaders, suppliers and terms, then course occasions/sessions/prices. Set multiple-types display appropriately. Total price mode T remains default; choose V for mixed Internat/Externat courses and mark the non-residential occasions explicitly (all existing/new courses initially default Internat).
 
-1. Take the full site/files/database backup you planned and retain the restore instructions.
-2. Install the component. Check **System → Maintenance → Database**; the schema is 2.0.28. No manual SQL import or test database copy is required.
-3. Install the selected addons. Newly created module instances are unpublished. Set their titles, positions, menu assignments and individual options before publishing them. Use two instances of Related Courses if both leader and place modes are needed.
-4. Keep sample-data loading disabled. Email modes and Mailchimp/Zenler delivery default to Disabled; installing packages does not create scheduled tasks or enable delivery.
+Review site branding, articles/category/image references and mail templates. Configure reCAPTCHA v2 keys for the site's domain and explicitly enable protection (recaptcha.net). Configure evaluation public URL/thank-you Custom module if used. Numeric Joomla IDs from another site do not identify the same content here.
 
-## Initial configuration
+Fresh email and marketing modes default Disabled. Configure authenticated encrypted SMTP and explicitly choose Sandbox/Production per feature only when ready; old Disabled/Sandbox messages do not automatically become production-eligible. Keep the UGL-only Mailchimp series off for UL sites; configure an appropriate Zenler funnel or leave newsletter delivery off. Create/enable scheduled routines only when configured; CPanel cron invokes Joomla Scheduler. Installation does not create live schedules. Updating retains existing settings.
 
-Open component Options in the backend. Set the site language, article categories for course leaders/places and **multiple course types = No** for this UL site. Review statistics commission/goal settings if using them. For frontend administration use your Joomla account with component management permission (Super Users already qualify). Supplier accounts require the separate supplier permission and a matching supplier record linked to their Joomla user; do not grant backend administration merely to enable supplier access.
+After real bookings begin, preserve/reconcile new records before restoring an older backup. Publication does not install anything on hosting or change live mail/API settings.
 
-Frontend administrator entry: `/index.php?option=com_altacourses&view=dashboard`.
-Public course listing: `/index.php?option=com_altacourses&view=courses`.
-Create suitable Joomla menu items for these routes as required by the site's navigation.
-
-Before creating courses, open **Platsindikeringar** from the administrator dashboard and add/publish these four entries. The numeric value is a status code, separate from the database record ID:
-
-| Value | Suggested label |
-|---|---|
-| 1 | 3+ |
-| 2 | Fullbokat |
-| 3 | Få |
-| 4 | Inställd |
-
-Create the UL course type, regions, course places, leaders and suppliers with their booking terms. Select this site's article references and existing images where appropriate. Then create course occasions, dates/sessions, prices, ownership and availability. Do not load synthetic sample data as a shortcut.
-
-Review all outgoing mail templates, public wording and module text for UL/advenire branding. Only the editable type 12 introduction is initially seeded; create the required mail templates before enabling the corresponding email functions. Configure the evaluation thank-you Custom module and public evaluation URL if using evaluations. Article/module/category IDs from another site do not identify the same content here.
-
-## Controlled acceptance and delivery
-
-First test anonymous listing/information, signup and enquiry, administrator/client editing, supplier ownership/access, availability, participation/rebooking, commissions and whichever public modules are published. Use clearly identified test contacts. With delivery Disabled, messages can be recorded without being sent.
-
-Configure reCAPTCHA v2 checkbox keys for advenire.se and explicitly enable protection. Check missing/expired challenges and successful submission. Frontend scripts and verification use recaptcha.net.
-
-When ready for controlled delivery tests, configure Joomla SMTP and sender details and select Sandbox or Production separately for notifications, reminders, evaluation invitations and monthly reports. Production requires authenticated SMTP with TLS and Joomla Send Mail enabled. SMTP changes alone do not enable delivery. Previously queued Disabled/Sandbox messages retain their original provenance and require explicit reviewed production approval; changing modes never releases the old queue automatically. Production delivery retains per-message review and sandbox protections.
-
-Leave the UGL-only Mailchimp series disabled for this UL site. Zenler newsletter delivery is separate: configure an appropriate funnel/account or leave it disabled; do not assume the UGL newsletter funnel is suitable for advenire.se.
-
-Enable the task plugin and create only the Joomla Scheduled Tasks you want, after checking their configuration and controlled recipients. The CPanel cron invokes Joomla's scheduler, which runs the plugin routines. No external FastCron job is needed for these new routines. Monthly reminders are due on the 20th at/after 09:00 Stockholm time; daily/hourly scheduler polling must actually run, and UTC execution settings must account for daylight saving. Review each routine's setup, delivery mode and results before relying on it.
-
-## Updates and launch
-
-Manual upload installs the selected Beta package without changing Joomla's minimum extension stability. Future Beta Live Updates require Joomla's minimum extension stability to allow Beta; that global setting also affects other extensions. Stable-only sites will not discover prereleases. Each installed addon has its own update feed.
-
-Decide when real bookings begin and distinguish retained business records from disposable test records. A full backup restore is straightforward before real activity; after real requests arrive, preserve/reconcile those new records before restoring an older backup. This guide does not mark advenire.se as installed, tested on-host or publicly launched. Legacy installation protection remains in place; ugl.biz and uglkurser.se migration rehearsal follows separately.
-
-Installation ZIPs contain the new extension’s readable PHP source. Private development history, legacy source and database exports are excluded. Checksums are supplied beside every ZIP.
+Each package has its own native update feed and SHA-256 file. Earlier immutable ZIPs remain in packages/. Installation ZIPs include readable new PHP source; private history, legacy reference and database exports are excluded.
