@@ -1,10 +1,10 @@
-# Altacourses Beta3 + Related Courses Beta3.1
+# Altacourses Beta4
 
-Update the component first, then Compact Courses and Related Courses. Back up files/database first; do not uninstall to update. Use Joomla Live Update with minimum extension stability Beta, or upload these ZIPs. Updating retains business records, settings, delivery modes, module instances/assignments and schedules; schema stays2.0.28.
+Beta4 updates the component only. Compact Courses remains Beta3 and Related Courses remains Beta3.1; install their updates if not already installed. Back up files/database first; do not uninstall to update. Use Joomla Live Update with minimum extension stability Beta, or upload these ZIPs. Updating retains business records, settings, delivery modes, module instances/assignments and schedules; schema stays2.0.28.
 
 | Package | Current download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta3.zip) |
+| Component | [com_altacourses 2.0.0-beta4](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta4.zip) |
 | Compact courses | [mod_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta3.zip) |
 | Related courses | [mod_altarelatedcourses 2.0.0-beta3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta3.1.zip) |
 | Course details (unchanged) | [mod_altacoursedetails 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
@@ -12,9 +12,17 @@ Update the component first, then Compact Courses and Related Courses. Back up fi
 | Editable letter (unchanged) | [mod_altacoursesletter 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta1.zip) |
 | Public evaluations (unchanged) | [mod_altaevaluations 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta1.zip) |
 
+## Beta4 changes
+
+- Joomla calendar pickers with week numbers on course forms and listing filters. Date-only ISO storage and strict validation remain.
+- Supplier dropdowns show company name, falling back to account name when missing. Ownership and permissions stay unchanged.
+- Remove dashboard-return links on Manage Courses, Participation reconciliation and Contacts; remove the redundant public listing subheading.
+- Include the owner's committed Swedish wording edits and matching menu-type labels.
+- No schema change or new module/plugin update. The legacy-install guard stays in place; migration readiness for ugl.biz is planned separately for Beta5.
+
 ## Beta3.1 correction
 
-If Beta3 is installed, update **only Related Courses**. Version2.0.0-beta3.1 splits its text in both leader/place modes: VAT plus the relevant linked-name instruction first, then T inclusion or separate V Internat/Externat paragraphs. The component remains Beta3; no data/settings change. CSS hooks: `.altarelatedcourses-price-notice`, `-total`, `-internat`, `-externat`.
+If Beta3 is installed, update **only Related Courses**. Version2.0.0-beta3.1 splits its text in both leader/place modes: VAT plus the relevant linked-name instruction first, then T inclusion or separate V Internat/Externat paragraphs. That module correction did not change component data/settings. CSS hooks: `.altarelatedcourses-price-notice`, `-total`, `-internat`, `-externat`.
 
 ## Beta3 changes and setup
 
