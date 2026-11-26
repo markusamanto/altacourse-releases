@@ -1,16 +1,33 @@
-# Altacourses Beta4
+# Altacourses Beta5
 
-Beta4 updates the component only. Compact Courses remains Beta3 and Related Courses remains Beta3.1; install their updates if not already installed. Back up files/database first; do not uninstall to update. Use Joomla Live Update with minimum extension stability Beta, or upload these ZIPs. Updating retains business records, settings, delivery modes, module instances/assignments and schedules; schema stays2.0.28.
+Beta5 updates the component and four modules. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta; component first. Back up files/database and do not uninstall. The first legacy ugl.biz installation needs the manual migration procedure below. Compact Courses and Scheduled Tasks keep their previous versions. Business schema stays2.0.28.
 
 | Package | Current download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta4](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta4.zip) |
+| Component | [com_altacourses 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.zip) |
 | Compact courses | [mod_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta3.zip) |
-| Related courses | [mod_altarelatedcourses 2.0.0-beta3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta3.1.zip) |
-| Course details (unchanged) | [mod_altacoursedetails 2.0.0-beta2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta2.zip) |
+| Related courses | [mod_altarelatedcourses 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.zip) |
+| Course details | [mod_altacoursedetails 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta5.zip) |
 | Scheduled tasks (unchanged) | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
-| Editable letter (unchanged) | [mod_altacoursesletter 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta1.zip) |
-| Public evaluations (unchanged) | [mod_altaevaluations 2.0.0-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta1.zip) |
+| Editable letter | [mod_altacoursesletter 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta5.zip) |
+| Public evaluations | [mod_altaevaluations 2.0.0-beta5](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta5.zip) |
+
+## Beta5 changes and legacy installation
+
+- Guarded offline adoption of the inspected ugl.biz legacy schema, retaining original IDs/history and source tables, with a recovery journal and backend report. Unknown inventories and nonempty legacy managers/rebooked/keyaccount histories requiring further mapping are refused.
+- Converted working/public menus preserve frontend IDs/aliases/access and help-module assignments. Compatible related/detail/letter/evaluation module instances are handed over when replacements are installed. Old full-listing/page-layout/quick-statistics instances are deliberately held for component-based replacements and review.
+- Ambiguous shared legacy evaluation credentials fail closed; unambiguous old credentials and public signup/enquiry GET entry routes retain compatibility.
+- Remove New course from Manage Courses; translated native-calendar hints ÅÅÅÅ-MM-DD / YYYY-MM-DD; latest committed Swedish wording included.
+
+**First legacy installation on ugl.biz:** do not upload this to Joomla5/PHP8.2. Keep the site offline; stop old external cron and disable legacy Finder plugins. Take a complete files/database backup, check the site's other extensions/template, switch to PHP8.4 and use Joomla's supported upgrade path to at least6.2. Keep the old module records/publication settings intact for migration; do not uninstall. Do not open old frontend working pages during the transition.
+
+Take an additional upgraded-platform backup before replacing the component. Manually install the component Beta5 ZIP, inspect Components → Altacourses for the migration report, then install the four Beta5 module ZIPs. Review unmapped menus, public listing/information menu conversions, old full-listing and information-page module replacements, supplier access, original records, letter/image/links and the actual custom template before reopening. The inspected copy has menu220 (`mailtemplates_types`) and424 (`admin_courses`) needing manual review. The old full listing is not a drop-in compact-listing instance.
+
+Delivery/API modes remain off. Configure/preview site-specific settings and the two existing active future signups before enabling replacement Joomla tasks. Never run old cron and new routines together. The original tables/journal are retained privately in the database; do not delete them as an installation workaround.
+
+If installation stops, keep the site offline, correct a diagnosed permissions issue and retry the same package; the journal supports resuming the prepared database state. For full rollback, restore matching complete files/database and PHP version. Table archives alone do not roll back Joomla files/settings, and restoring an old backup after accepting new records requires reconciliation.
+
+The owner plans a direct production installation after backup, without a hosted staging site. Local native migration/interruption/retry, data/metadata reconciliation and runtime checks used a private copy of the supplied export, with no real email/API delivery. The actual core upgrade and deployed vendor/template files were not rehearsed. A fresh export is required for final reconciliation before production cutover. [Detailed installation and rollback guide (repository access required)](https://github.com/markusamanto/altacourse/blob/beta5-migration/docs/beta5-installation.md).
 
 ## Beta4 changes
 
