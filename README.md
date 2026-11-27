@@ -1,16 +1,22 @@
-# Altacourses Beta5.2
+# Altacourses Beta5.3
 
-Beta5.2 updates the component only. The four migration-compatible modules remain at Beta5.1. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta; component first. Back up files/database and do not uninstall. The first legacy ugl.biz installation needs the manual migration procedure below. Compact Courses and Scheduled Tasks keep their previous versions. Business schema stays2.0.28.
+Beta5.3 updates the component only. The four migration-compatible modules remain at Beta5.1. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta; component first. Back up files/database and do not uninstall. The first legacy ugl.biz installation needs the manual migration procedure below. Compact Courses and Scheduled Tasks keep their previous versions. Business schema stays2.0.28.
 
 | Package | Current download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta5.2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.2.zip) |
+| Component | [com_altacourses 2.0.0-beta5.3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.3.zip) |
 | Compact courses | [mod_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta3.zip) |
 | Related courses | [mod_altarelatedcourses 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.1.zip) |
 | Course details | [mod_altacoursedetails 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta5.1.zip) |
 | Scheduled tasks (unchanged) | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
 | Editable letter | [mod_altacoursesletter 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta5.1.zip) |
 | Public evaluations | [mod_altaevaluations 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta5.1.zip) |
+
+## Beta5.3 — public search help
+
+Add a Joomla Custom module at position **altacourses_search_help** (type the position if not predefined by your template). It appears directly below the complete search panel on the component public course listing, before pricing and results, even when search is collapsed. Choose normal module publication/access/language/menu assignments. Its content is rendered without extra title/card chrome; style the content through your own classes and user.css. Empty/unpublished help leaves no position wrapper or gap.
+
+Native component upgrade58 and public HTTP50 checks pass, including placement, menu/access/publication/order, filtering, no results and pagination. Only the component needs updating.
 
 ## Beta5.2 refinements
 
