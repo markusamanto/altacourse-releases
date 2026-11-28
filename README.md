@@ -1,16 +1,22 @@
-# Altacourses Beta5.3.1
+# Altacourses Beta5.3.2
 
-Beta5.3.1 updates the component and three modules: Compact Courses, Course Details and Related Courses. Update the component first, then those modules. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta. Back up files/database and do not uninstall. Other packages retain their current versions; business schema remains2.0.28. First legacy installations still require the migration procedure below.
+Beta5.3.2 updates the component and three modules: Compact Courses, Course Details and Related Courses. Update the component first, then those modules. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta. Back up files/database and do not uninstall. Other packages retain their current versions; business schema remains2.0.28. First legacy installations still require the migration procedure below.
 
 | Package | Current download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta5.3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.3.1.zip) |
-| Compact courses | [mod_altacourses 2.0.0-beta5.3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta5.3.1.zip) |
-| Related courses | [mod_altarelatedcourses 2.0.0-beta5.3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.3.1.zip) |
-| Course details | [mod_altacoursedetails 2.0.0-beta5.3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta5.3.1.zip) |
+| Component | [com_altacourses 2.0.0-beta5.3.2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.3.2.zip) |
+| Compact courses | [mod_altacourses 2.0.0-beta5.3.2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta5.3.2.zip) |
+| Related courses | [mod_altarelatedcourses 2.0.0-beta5.3.2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.3.2.zip) |
+| Course details | [mod_altacoursedetails 2.0.0-beta5.3.2](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta5.3.2.zip) |
 | Scheduled tasks (unchanged) | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
 | Editable letter | [mod_altacoursesletter 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta5.1.zip) |
 | Public evaluations | [mod_altaevaluations 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta5.1.zip) |
+
+## Beta5.3.2 — currency label
+
+In component Options → Price display, set **Currency label** to **SEK** or **kr**. The default and blank fallback are kr. It applies to public course listing/information/signup and Compact Courses, Course Details and Related Courses. Calculations, underlying SEK currency and email formatting are unchanged.
+
+Update the component first, then the three modules. Native four-package upgrade76 and focused public currency231 checks passed. No schema change is required.
 
 ## Beta5.3.1 refinements
 
