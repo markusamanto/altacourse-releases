@@ -1,16 +1,23 @@
-# Altacourses Beta5.3
+# Altacourses Beta5.3.1
 
-Beta5.3 updates the component only. The four migration-compatible modules remain at Beta5.1. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta; component first. Back up files/database and do not uninstall. The first legacy ugl.biz installation needs the manual migration procedure below. Compact Courses and Scheduled Tasks keep their previous versions. Business schema stays2.0.28.
+Beta5.3.1 updates the component and three modules: Compact Courses, Course Details and Related Courses. Update the component first, then those modules. Existing rebuilt sites can use Joomla Live Update with minimum stability Beta. Back up files/database and do not uninstall. Other packages retain their current versions; business schema remains2.0.28. First legacy installations still require the migration procedure below.
 
 | Package | Current download |
 |---|---|
-| Component | [com_altacourses 2.0.0-beta5.3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.3.zip) |
-| Compact courses | [mod_altacourses 2.0.0-beta3](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta3.zip) |
-| Related courses | [mod_altarelatedcourses 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.1.zip) |
-| Course details | [mod_altacoursedetails 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta5.1.zip) |
+| Component | [com_altacourses 2.0.0-beta5.3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/com_altacourses-2.0.0-beta5.3.1.zip) |
+| Compact courses | [mod_altacourses 2.0.0-beta5.3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacourses-2.0.0-beta5.3.1.zip) |
+| Related courses | [mod_altarelatedcourses 2.0.0-beta5.3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.3.1.zip) |
+| Course details | [mod_altacoursedetails 2.0.0-beta5.3.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursedetails-2.0.0-beta5.3.1.zip) |
 | Scheduled tasks (unchanged) | [plg_task_altacoursesmonthly 2.0.1-beta1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/plg_task_altacoursesmonthly-2.0.1-beta1.zip) |
 | Editable letter | [mod_altacoursesletter 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altacoursesletter-2.0.0-beta5.1.zip) |
 | Public evaluations | [mod_altaevaluations 2.0.0-beta5.1](https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altaevaluations-2.0.0-beta5.1.zip) |
+
+## Beta5.3.1 refinements
+
+- Include the latest owner-edited English wording in the component, Compact Courses, Course Details and Related Courses.
+- Related Courses: Information links now use btn btn-default button styling with the same destinations.
+- Component information page: place and facilitator photos precede their names, preserving existing CSS classes and article links including coid.
+- Native four-package upgrade76, photo/link/permission78 and related-course80 checks passed;269 PHP files pass syntax validation. Language keys and placeholders validated.
 
 ## Beta5.3 — public search help
 

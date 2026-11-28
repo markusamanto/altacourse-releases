@@ -2,18 +2,18 @@
 <updates>
     <update>
         <name>Altacourses related courses</name>
-        <description>Leader/place related listings with preserved legacy module instances; Beta5 release.</description>
+        <description>Related course Information button and updated English wording; Beta5.3.1 release.</description>
         <element>mod_altarelatedcourses</element>
         <type>module</type>
-        <version>2.0.0-beta5.1</version>
+        <version>2.0.0-beta5.3.1</version>
         <client>site</client>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.1.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/markusamanto/altacourse-releases/main/packages/mod_altarelatedcourses-2.0.0-beta5.3.1.zip</downloadurl>
         </downloads>
         <infourl title="Altacourses downloads">https://github.com/markusamanto/altacourse-releases</infourl>
         <targetplatform name="joomla" version="6\.2(?:\.|$)" />
         <php_minimum>8.4.0</php_minimum>
-        <sha256>2cc883b9d8e2784514b4739acb9de44c2e5a084cb845ad3373f8d860d6a19939</sha256>
+        <sha256>d1794a751afa65f28c58c01b7800ba17d476d77429a691fcaf0079fc27981c66</sha256>
         <tags>
             <tag>beta</tag>
         </tags>
